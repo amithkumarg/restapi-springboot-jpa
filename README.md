@@ -1,2 +1,3 @@
-# event-mgr-api
-Api Lets You Create Tickets For Event, Sell and Manage It
+# Event Manager API
+
+This project exposes REST Api which lets You create event, inventory tickets for it, and then sell & manage tickets for it.
