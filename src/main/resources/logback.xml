@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true" scan="true" scanPeriod="300 seconds">
+
+  <property name="LOGS_DIR" value="/ln/logs"/>
+  <property name="APP_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%logger] [%level] [%thread] [%file:%method:%line] %msg%n"/>
+  
+  <timestamp key="byDay" datePattern="yyyyMMdd"/>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <Pattern> ${APP_LOG_PATTERN} </Pattern>
+    </encoder>
+  </appender>
+
+  <appender name="appAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+  	<file>${LOGS_DIR}/app.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOGS_DIR}/app-%d{yyyyMMdd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <Pattern> ${APP_LOG_PATTERN} </Pattern>
+    </encoder>
+  </appender>
+  
+  <logger name="com.ln" additivity="true" level="DEBUG">
+    <appender-ref ref="appAppender"/>
+  </logger>
+  
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>
