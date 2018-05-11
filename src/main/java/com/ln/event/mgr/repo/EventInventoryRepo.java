@@ -10,7 +10,7 @@ public interface EventInventoryRepo extends JpaRepository<EventInventory, Intege
 	
 	List<EventInventory> findByEventCode(String eventCode);
 	
-	@Query(value = "SELECT COUNT(inventory_id) FROM event_inventory"
+	@Query(value = "SELECT COUNT(inventory_id) FROM lnevent.event_inventory"
 			+ " WHERE event_code = COALESCE(?1, event_code)"
 			+ " AND available = COALESCE(?2, available)"
 			+ " AND seat_type = COALESCE(?3, seat_type)"
