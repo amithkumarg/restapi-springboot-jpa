@@ -1,4 +1,4 @@
-package com.ln.event.mgr.model;
+package com.oss.shop.model;
 
 import java.io.Serializable;
 
@@ -10,7 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.ln.event.mgr.model.Seat.SeatType;
+import com.oss.shop.model.Seat.SeatType;
+
 import lombok.Data;
 
 /**

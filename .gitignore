@@ -1,5 +1,7 @@
 # Maven 
 target/
+/
+!.mvn/wrapper/maven-wrapper.jar
 
 # IntelliJ project files 
 *.iml

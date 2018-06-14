@@ -1,8 +1,10 @@
-package com.ln.event.mgr.rq.dto;
+package com.oss.shop.rq.dto;
 
 import java.io.Serializable;
+
+import com.oss.shop.model.Seat.SeatType;
+
 import lombok.Data;
-import com.ln.event.mgr.model.Seat.SeatType;
 
 /**
  * 

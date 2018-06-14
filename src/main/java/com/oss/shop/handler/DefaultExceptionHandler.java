@@ -1,4 +1,4 @@
-package com.ln.event.mgr.handler;
+package com.oss.shop.handler;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
-import com.ln.event.mgr.rs.dto.ApiError;
+
+import com.oss.shop.rs.dto.ApiError;
+
 import lombok.extern.slf4j.Slf4j;
 
 @RestController

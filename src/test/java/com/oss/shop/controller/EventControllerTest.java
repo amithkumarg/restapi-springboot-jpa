@@ -1,4 +1,4 @@
-package com.ln.event.mgr.controller;
+package com.oss.shop.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,8 +7,11 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import com.ln.event.mgr.model.EventInventory;
-import com.ln.event.mgr.repo.EventInventoryRepo;
+
+import com.oss.shop.controller.EventController;
+import com.oss.shop.model.EventInventory;
+import com.oss.shop.repo.EventInventoryRepo;
+
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

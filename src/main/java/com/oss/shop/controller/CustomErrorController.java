@@ -1,4 +1,4 @@
-package com.ln.event.mgr.controller;
+package com.oss.shop.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -6,7 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.ln.event.mgr.rs.dto.ApiError;
+
+import com.oss.shop.rs.dto.ApiError;
 
 @RestController
 public class CustomErrorController implements ErrorController {

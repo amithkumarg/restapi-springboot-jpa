@@ -1,4 +1,4 @@
-package com.ln.event.mgr.repo;
+package com.oss.shop.repo;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -8,6 +8,8 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import com.oss.shop.repo.EventInventoryRepo;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

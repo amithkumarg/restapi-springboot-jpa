@@ -1,4 +1,4 @@
-package com.ln.event.mgr.model;
+package com.oss.shop.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;

@@ -1,4 +1,4 @@
-package com.ln.event.mgr.rs.dto;
+package com.oss.shop.rs.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

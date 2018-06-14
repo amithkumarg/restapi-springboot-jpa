@@ -1,10 +1,11 @@
-package com.ln.event.mgr.repo;
+package com.oss.shop.repo;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import com.ln.event.mgr.model.EventInventory;
+
+import com.oss.shop.model.EventInventory;
 
 public interface EventInventoryRepo extends JpaRepository<EventInventory, Integer> {
 	
