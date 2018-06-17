@@ -60,3 +60,38 @@ insert into inventory (inventory_id, event_id, seat_id, available) values
 (16, 3, 16, true),
 (17, 3, 17, true),
 (18, 3, 18, true);
+
+/* District & School Data */
+INSERT INTO district 
+VALUES     (1, 
+            'test@gmail.com', 
+            '602-911-9110', 
+            1, 
+            'SampleDist', 
+            1, 
+            'Demo', 
+            '2018-06-17'); 
+
+INSERT INTO school 
+VALUES     (1, 
+            false, 
+            'test@yahoo.com', 
+            '602-326-9110', 
+            1, 
+            'AA', 
+            'ZZ', 
+            'SchoolOfFun', 
+            1, 
+            1); 
+
+INSERT INTO school 
+VALUES     (2, 
+            false, 
+            'demo@hotmail.com', 
+            '602-549-9110', 
+            1, 
+            'BB', 
+            'YY', 
+            'SchoolOfAce', 
+            2, 
+            1); 
