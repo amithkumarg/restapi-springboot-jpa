@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import com.oss.shop.model.EventInventory;
 
+@Repository
 public interface EventInventoryRepo extends JpaRepository<EventInventory, Integer> {
 	
 	List<EventInventory> findByEventCode(String eventCode);
