@@ -19,6 +19,7 @@ This project exposes REST Api built on spring boot with jpa
 					- get only request event & its inventory detail
 
 * /events [POST]<br/>
+					- get only list of events matching the provided filters
 ```
 REQUEST
 
