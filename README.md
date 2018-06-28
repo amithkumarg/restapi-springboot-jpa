@@ -2,11 +2,6 @@
 
 This project exposes REST Api built on spring boot with jpa
 
-## Demo 
-Hosted on AWS
-
-- [RESTApi](http://ec2-18-220-31-226.us-east-2.compute.amazonaws.com:3007/events)
-
 ## Technology Stack 
 - Spring-Boot
 	- Spring-Boot-JPA
