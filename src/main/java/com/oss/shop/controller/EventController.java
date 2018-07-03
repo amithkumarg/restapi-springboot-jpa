@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.oss.shop.repo.EventInventoryRepo;
 import com.oss.shop.rq.dto.EventSeat;
+import com.oss.shop.rs.dto.EventInventorys;
 
 /**
  * handles all valid requests for viewing event(s) data
@@ -57,7 +58,15 @@ public class EventController {
         eventSeat.getSeatType() == null ? null : eventSeat.getSeatType().name(),
         eventSeat.getAisle());
   }
-
-
-
+  
+   /**
+   * return only requested event data
+   * 
+   * @return
+   */
+  @GetMapping("/events/xml/{eventCode}")
+  @ResponseBody
+  public Object findEventXMLList(@PathVariable("eventCode") String eventCode) {
+    return new EventInventorys(eventInventoryRepo.findByEventCode(eventCode));
+  }
 }

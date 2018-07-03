@@ -8,10 +8,8 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.oss.shop.model.Seat.SeatType;
-
 import lombok.Data;
 
 /**
