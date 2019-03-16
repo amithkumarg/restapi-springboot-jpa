@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.oss.shop.repo.SchoolRepo;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 @RestController
 public class SchoolController {
 
@@ -21,5 +24,17 @@ public class SchoolController {
 	@ResponseBody
 	public Object listSchools() {
 		return schoolRepo.findAll();
+	}
+
+	@GetMapping("/schoolfilter")
+	@ResponseBody
+	public Object listSchoolsById() {
+		return schoolRepo.findSchoolByIdIn(Arrays.asList(1L, 2L));
+	}
+
+	@GetMapping("/schoolnofilter")
+	@ResponseBody
+	public Object listSchoolsByNoId() {
+		return schoolRepo.findSchoolByIdIn(null);
 	}
 }

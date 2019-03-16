@@ -94,4 +94,16 @@ VALUES     (2,
             'YY', 
             'SchoolOfAce', 
             2, 
-            1); 
+            1);
+
+INSERT INTO school
+VALUES     (3,
+            false,
+            'demo@gmail.com',
+            '602-617-9120',
+            1,
+            'CC',
+            'DD',
+            'SchoolOfRhodys',
+            3,
+            1);

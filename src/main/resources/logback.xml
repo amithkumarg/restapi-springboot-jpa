@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true" scan="true" scanPeriod="300 seconds">
 
-  <property name="LOGS_DIR" value="/ln/logs"/>
+  <property name="LOGS_DIR" value="./logs/"/>
   <property name="APP_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%logger] [%level] [%thread] [%file:%method:%line] %msg%n"/>
   
   <timestamp key="byDay" datePattern="yyyyMMdd"/>
