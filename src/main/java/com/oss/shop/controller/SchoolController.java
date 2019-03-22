@@ -1,15 +1,16 @@
 package com.oss.shop.controller;
 
+import com.oss.shop.repo.SchoolRepo;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.oss.shop.repo.SchoolRepo;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 @RestController
+@Api
 public class SchoolController {
 
 	@Autowired
@@ -37,4 +38,6 @@ public class SchoolController {
 	public Object listSchoolsByNoId() {
 		return schoolRepo.findSchoolByIdIn(null);
 	}
+
 }
+
