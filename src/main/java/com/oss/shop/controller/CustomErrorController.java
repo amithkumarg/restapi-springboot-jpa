@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.oss.shop.rs.dto.ApiError;
 
-@RestController
+//@RestController
 public class CustomErrorController implements ErrorController {
 
   @Override
