@@ -3,6 +3,8 @@ package com.oss.shop.controller;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
@@ -15,13 +17,13 @@ public class DefaultController implements ErrorController {
     }
 
     @RequestMapping("/error")
-    public void handleErrorWithRedirect(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/swagger-ui.html");
+    public RedirectView handleErrorWithRedirect(HttpServletResponse response) throws IOException {
+        return new RedirectView("/swagger-ui.html", true);
     }
 
     @RequestMapping(value = "/")
-    public void redirect(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/swagger-ui.html");
+    public RedirectView redirect(HttpServletResponse response) throws IOException {
+        return new RedirectView("/swagger-ui.html", true);
     }
 
 }

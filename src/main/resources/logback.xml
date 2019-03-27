@@ -22,7 +22,7 @@
     </encoder>
   </appender>
   
-  <logger name="com.ln" additivity="true" level="DEBUG">
+  <logger name="com" additivity="true" level="DEBUG">
     <appender-ref ref="appAppender"/>
   </logger>
   
