@@ -109,6 +109,12 @@
 			<artifactId>liquibase-core</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-maven-plugin</artifactId>
+			<version>3.6.3</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -185,7 +191,26 @@
 				</executions>
 			</plugin>
 
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<version>3.6.3</version>
+				<configuration>
+					<propertyFile>target/classes/application.properties</propertyFile>
+				</configuration>
+			</plugin>
+
 		</plugins>
+
+		<filters>
+			<filter>src/main/filters/filter.properties</filter>
+		</filters>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 	</build>
 
 
