@@ -17,13 +17,17 @@ public class DefaultController implements ErrorController {
     }
 
     @RequestMapping("/error")
-    public RedirectView handleErrorWithRedirect(HttpServletResponse response) throws IOException {
+    public RedirectView handleErrorWithRedirect() throws IOException {
         return new RedirectView("/swagger-ui.html", true);
     }
 
     @RequestMapping(value = "/")
-    public RedirectView redirect(HttpServletResponse response) throws IOException {
+    public RedirectView redirect() throws IOException {
         return new RedirectView("/swagger-ui.html", true);
     }
 
+    @RequestMapping(value = "/unauth")
+    public RedirectView redirectInvalid() throws IOException {
+        return new RedirectView("/invalid-token.html", true);
+    }
 }
